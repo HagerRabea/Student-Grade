@@ -42,6 +42,7 @@ document.getElementById('gradeForm').addEventListener('submit', async function(e
       if (Array.isArray(entry) && entry.length) {
         entry.forEach((g, i) => {
           html += `<li>Midterm ${i+1} Grade: ${g}</li>`;
+          console.log(g);
           if(g>=15){
                html += `</ul><p>Bravo! May success always be with you.</p>`;
           }
