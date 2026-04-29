@@ -41,12 +41,13 @@ document.getElementById('gradeForm').addEventListener('submit', async function(e
       let html = `<h2>Your Grades</h2><ul>`;
       if (Array.isArray(entry) && entry.length) {
         entry.forEach((g, i) => {
-          html += `<li>Quiz ${i+1} Grade: ${g}</li>`;
+          html += `<li>Midterm ${i+1} Grade: ${g}</li>`;
+          html += `</ul><p>Bravo! May success always be with you.</p>`;
         });
       } else {
         html += `<li>No recorded grades</li>`;
       }
-      html += `</ul><p>Bravo! May success always be with you.</p>`;
+      // html += `</ul><p>Bravo! May success always be with you.</p>`;
       gradeDisplay.innerHTML = html;
     } else {
       gradeDisplay.innerHTML = '<p>Contact The Doctor</p>';
