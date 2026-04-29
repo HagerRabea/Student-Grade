@@ -10,7 +10,7 @@ document.getElementById('gradeForm').addEventListener('submit', async function(e
     return;
   }
 
-  const API_URL = 'https://api.sheetbest.com/sheets/44b8dfa9-2b1a-4ded-8344-b70cc3939ac9';
+  const API_URL = 'https://api.sheetbest.com/sheets/122925e1-0a1e-416a-a663-5b52a70419e2';
 
   try {
     const res = await fetch(API_URL);
@@ -49,7 +49,7 @@ document.getElementById('gradeForm').addEventListener('submit', async function(e
       html += `</ul><p>Bravo! May success always be with you.</p>`;
       gradeDisplay.innerHTML = html;
     } else {
-      gradeDisplay.innerHTML = '<p>Student ID not found</p>';
+      gradeDisplay.innerHTML = '<p>Contact The Doctor</p>';
     }
 
   } catch (err) {
